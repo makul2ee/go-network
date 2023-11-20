@@ -61,4 +61,37 @@ func main() {
 	var x int = 5
 	var xPtr *int = &x
 	fmt.Println(xPtr)
+
+
+	var a = map[string]string{"brand": "Ford", "model": "Mustang", "year": "2023"}
+  b := map[string]int{"Oslo": 1, "Bergen": 2, "Trondheim": 3, "Stavanger": 4}
+  fmt.Printf("a\t%v\n", a)
+  fmt.Printf("b\t%v\n", b)
+
+  //Go Operators
+  var (
+    sum1 = 250 + 50 // 150 (100 + 50)
+    sum2 = sum1 + 250 // 400 (150 + 250)
+    sum3 = sum2 + sum2 // 800 (400 + 400)
+  )
+  fmt.Println(sum3)
+
+  day := 3
+
+  switch day {
+  case 1:
+    fmt.Println("Monday")
+  case 2:
+    fmt.Println("Tuesday")
+  case 3:
+    fmt.Println("Wednesday")
+  case 4:
+    fmt.Println("Thursday")
+  case 5:
+    fmt.Println("Friday")
+  case 6:
+    fmt.Println("Saturday")
+  case 7:
+    fmt.Println("Sunday")
+  }
 }
