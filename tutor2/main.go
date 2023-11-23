@@ -21,10 +21,7 @@ func main() {
 		num1, _ := strconv.Atoi(vars["num1"])
 		num2, _ := strconv.Atoi(vars["num2"])
 		fmt.Fprintf(w, "<h1>Total = %d</h1>", num1+num2)
-	})
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Hello World")
-    })
+	}) 
 	http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "My Name is Makul2ee")
     })
